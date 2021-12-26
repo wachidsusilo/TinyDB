@@ -4,7 +4,7 @@ An easy to use `FS` wrapper for Arduino, ESP8266, and ESP32. Support any `FS` ba
 ## Examples
 This library can be used to store any _Stringable_ data type into `FS` based storage.
 ### 1. Common Data Type
-````
+````c++
 #include "SPIFFS.h"
 #include "TinyDB.h"
 
@@ -34,7 +34,7 @@ void loop() {}
 ````
 
 ### 2. Common List
-````
+````c++
 #include "SPIFFS.h"
 #include "TinyDB.h"
 
@@ -67,7 +67,7 @@ void loop() {
 ````
 
 ### 3. Custom Object
-````
+````c++
 #include "SPIFFS.h"
 #include "TinyDB.h"
 
