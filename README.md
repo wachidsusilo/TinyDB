@@ -1,5 +1,5 @@
 ## TinyDB
-An easy to use `FS` wrapper for Arduino, ESP8266, and ESP32. Support any `FS` related storage, i.e. `SPIFFS`, `LittleFS`, and `SD`.
+An easy to use `FS` wrapper for Arduino, ESP8266, and ESP32. Support any `FS` based storage, i.e. `SPIFFS`, `LittleFS`, and `SD`.
 
 ## Examples
 This library can be used to store any _Stringable_ data type into `FS` based storage.
