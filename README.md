@@ -81,6 +81,7 @@ struct Person {
         : name(name), age(age) {}
 
     //This constructor MUST exist
+    //This constructor is used to rebuild object from String
     Person(std::vector<String> v) {
         if (v.size() >= 2) {
             name = v[0];
@@ -89,6 +90,7 @@ struct Person {
     }
 
     //This method MUST exist
+    //Members MUST be separated by comma
     String toString() const {
         return name + "," + age;
     }
