@@ -80,9 +80,10 @@ struct Person {
     Person(String name, int age)
         : name(name), age(age) {}
 
-    //This constructor MUST exist
-    //This constructor is used to rebuild object from String
-    Person(std::vector<String> v) {
+    //This kind of constructor MUST exist
+    //This constructor is used to rebuild object from a String
+    Person(String value) {
+        std::vector<String> v = TinyDB::split(value, ",");
         if (v.size() >= 2) {
             name = v[0];
             age = v[1].toInt();
@@ -90,7 +91,7 @@ struct Person {
     }
 
     //This method MUST exist
-    //Members MUST be separated by comma
+    //Members MUST be separated using a separator, in this case we use comma
     String toString() const {
         return name + "," + age;
     }

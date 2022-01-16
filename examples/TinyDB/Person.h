@@ -4,6 +4,7 @@
 #include <vector>
 
 #include "Arduino.h"
+#include "TinyDB.h"
 
 class Person {
    public:
@@ -16,7 +17,8 @@ class Person {
     Person(String name, int age, Gender gender)
         : name(name), age(age), gender(gender) {}
 
-    Person(std::vector<String> v) {
+    Person(String value) {
+        std::vector<String> v = TinyDB::split(value, ",");
         if (v.size() >= 3) {
             name = v[0];
             age = v[1].toInt();
